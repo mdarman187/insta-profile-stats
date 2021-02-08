@@ -21,8 +21,9 @@ def scrape_data(username):
 if __name__ == "__main__":
   username = "mdarman_187"
   data = scrape_data(username)
-  print("This account has ",data["Followers"],"followers")
-  print("This account has ",data["Following"],"following")
+  print(username,": has the following details.\n")
+  print("This account has ",data["Followers"],"followers\n")
+  print("This account has ",data["Following"],"following\n")
   print("This account has ",data["Posts"],"posts")
   
 
