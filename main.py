@@ -19,7 +19,7 @@ def scrape_data(username):
   return get_data(meta.attrs['content'])
 
 if __name__ == "__main__":
-  username = "mdarman_187"
+  username = input("Enter username of the Instagram Account:\n")
   data = scrape_data(username)
   print(username,": has the following details.\n")
   print("This account has ",data["Followers"],"followers\n")
